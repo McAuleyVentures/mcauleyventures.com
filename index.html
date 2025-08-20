@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>McAuley Ventures | Tim Hortons Franchise Group in British Columbia</title>
+    <meta name="description" content="McAuley Ventures operates 18 Tim Hortons locations across Chilliwack, Langley, Surrey, and Kelowna. Find store numbers, addresses, phone, and directions. Join our team.">
+    <link rel="canonical" href="https://www.mcauleyventures.com/" />
+
+    <!-- Open Graph / Twitter (better link previews) -->
+    <meta property="og:title" content="McAuley Ventures" />
+    <meta property="og:description" content="Proud Tim Hortons franchise group in BC. Store finder, careers, and our values." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mcauleyventures.com/" />
+    <meta property="og:image" content="https://www.mcauleyventures.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Lightweight favicon (inline SVG) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='28' fill='%231a2b6b'/%3E%3Ctext x='64' y='84' text-anchor='middle' font-size='64' font-family='Arial' fill='white' font-weight='700'%3EMV%3C/text%3E%3C/svg%3E" />
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html:focus-within { scroll-behavior: smooth; }
+      .focus-ring:focus { outline: 2px solid #4f46e5; outline-offset: 2px; }
+      @keyframes fadeInUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+      .fade-in { animation: fadeInUp 500ms ease-out 1; }
+    </style>
+
+    <!-- Structured data (Organization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "McAuley Ventures",
+      "url": "https://www.mcauleyventures.com/",
+      "description": "Tim Hortons franchise group in British Columbia operating 18 locations.",
+      "areaServed": ["Chilliwack", "Langley", "Surrey", "Kelowna"],
+      "brand": {"@type": "Brand", "name": "Tim Hortons"}
+    }
+    </script>
+  </head>
+  <body class="bg-white text-slate-800 antialiased">
+    <a class="sr-only focus:not-sr-only focus-ring absolute left-2 top-2 z-50 bg-white px-3 py-2 rounded" href="#main">Skip to content</a>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="h-16 flex items-center justify-between">
+          <a href="#home" class="flex items-center gap-2 focus-ring" aria-label="McAuley Ventures home">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-indigo-700 text-white font-bold">MV</span>
+            <span class="font-semibold text-lg">McAuley Ventures</span>
+          </a>
+          <nav class="hidden sm:flex items-center gap-6 text-sm" aria-label="Primary">
+            <a class="focus-ring" href="#stores">Stores</a>
+            <a class="focus-ring" href="#about">About</a>
+            <a class="focus-ring" href="#careers">Careers</a>
+            <a class="focus-ring" href="#handbook">Handbook</a>
+            <a class="focus-ring" href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" class="relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+          <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="fade-in">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">Proud Tim Hortons franchise group in BC</h1>
+              <p class="mt-4 text-lg text-slate-600">We operate 18 locations across Chilliwack, Langley, Surrey, and Kelowna. Use the store finder to get phone numbers and directions in one click.</p>
+              <div class="mt-6 flex flex-wrap items-center gap-3">
+                <a href="#stores" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-indigo-700 text-white hover:bg-indigo-800 focus-ring">Find a store</a>
+                <a href="#careers" class="inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold border border-slate-300 hover:border-slate-400 focus-ring">Work with us</a>
+              </div>
+              <p class="mt-6 text-xs text-slate-500">Last updated: 20 Aug 2025</p>
+            </div>
+            <div class="relative">
+              <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-indigo-50 to-indigo-100 border border-indigo-100 shadow-inner"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Store Finder -->
+      <section id="stores" class="border-t border-slate-200 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <div class="flex items-end justify-between gap-4 flex-wrap">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Store finder</h2>
+              <p class="mt-1 text-slate-600">Search by store number, street, or city. Tap a phone to call or directions to open Google Maps.</p>
+            </div>
+            <div class="flex items-center gap-2 text-sm">
+              <span class="px-2 py-1 rounded-full bg-white border border-slate-200">Total: <span id="storeCount">18</span></span>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="mt-6 grid sm:grid-cols-3 gap-3">
+            <label class="col-span-2">
+              <span class="block text-sm font-medium mb-1">Search</span>
+              <input id="searchInput" type="text" placeholder="e.g., 101033 or Fraser Hwy or Kelowna" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+            </label>
+            <label>
+              <span class="block text-sm font-medium mb-1">City</span>
+              <select id="cityFilter" class="w-full rounded-2xl border border-slate-300 px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400">
+                <option value="">All cities</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- Results -->
+          <div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-slate-100/70">
+                <tr>
+                  <th class="px-4 py-3 font-semibold">Store #</th>
+                  <th class="px-4 py-3 font-semibold">Address</th>
+                  <th class="px-4 py-3 font-semibold">City</th>
+                  <th class="px-4 py-3 font-semibold">Phone</th>
+                  <th class="px-4 py-3 font-semibold">Directions</th>
+                </tr>
+              </thead>
+              <tbody id="storesBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">About McAuley Ventures</h2>
+          <p class="mt-3 text-slate-600 max-w-3xl">McAuley Ventures is a Tim Hortons franchise group serving communities across British Columbia. We’re committed to great coffee, good food, and friendly service. This site is a simple directory of our locations to help you reach us quickly.</p>
+        </div>
+      </section>
+
+      <!-- Careers -->
+      <section id="careers" class="border-t border-slate-200 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Careers</h2>
+          <p class="mt-3 text-slate-600 max-w-3xl">We’re always looking for team members who love serving their community. Apply in minutes:</p>
+          <ol class="mt-4 list-decimal pl-6 text-slate-700">
+            <li>Send your resume and availability</li>
+            <li>Include your preferred city/location</li>
+            <li>Tell us when you can start</li>
+          </ol>
+          <a href="mailto:ferian@mcauleyventures.com" class="mt-6 inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold bg-indigo-700 text-white hover:bg-indigo-800 focus-ring">Apply by email</a>
+
+          <div class="mt-10">
+            <h3 class="text-lg font-semibold">FAQ</h3>
+            <details class="mt-3 border border-slate-200 rounded-xl p-4 bg-white">
+              <summary class="font-medium cursor-pointer">What shifts are available?</summary>
+              <p class="mt-2 text-slate-700">We offer a variety of shift options depending on the location, including early mornings, daytime, evenings, and weekends.</p>
+            </details>
+            <details class="mt-3 border border-slate-200 rounded-xl p-4 bg-white">
+              <summary class="font-medium cursor-pointer">Do I need experience?</summary>
+              <p class="mt-2 text-slate-700">Experience is an asset but not required. We provide full orientation and quality training.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Handbook (on‑page content) -->
+      <section id="handbook" class="border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Team Member Handbook</h2>
+          <p class="mt-3 text-slate-600 max-w-3xl">Key content from our Team Member Handbook is published below for easy reference.</p>
+
+          <div class="mt-8 grid lg:grid-cols-3 gap-6">
+            <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h3 class="font-semibold text-lg">Motto</h3><p class="mt-2 text-slate-700">We are people‑first, serving with pride.</p></div>
+            <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h3 class="font-semibold text-lg">Mission</h3><p class="mt-2 text-slate-700">To be the <strong>best‑operated community‑first restaurants in Western Canada</strong>.</p></div>
+            <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h3 class="font-semibold text-lg">Employee Promise</h3><p class="mt-2 text-slate-700">We provide meaningful work, respect, support, and opportunities to grow — every role, every shift, every day.</p></div>
+          </div>
+
+          <div class="mt-6 grid lg:grid-cols-2 gap-6">
+            <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h3 class="font-semibold text-lg">Our Credo</h3><p class="mt-2 text-slate-700">A place where teamwork thrives, guest happiness matters, and growth is continuous. We help each other succeed and serve every guest with warmth, speed, and care.</p></div>
+            <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h3 class="font-semibold text-lg">What We Believe</h3><p class="mt-2 text-slate-700">Our restaurants create moments of kindness, leadership, and teamwork. Every role matters — front of house and behind the scenes.</p></div>
+          </div>
+
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold">Our Commitments to Team Members</h3>
+            <ul class="mt-3 grid sm:grid-cols-2 gap-3 text-slate-700 list-disc pl-6">
+              <li>Great managers who care and help you succeed</li>
+              <li>Complete orientation and quality training</li>
+              <li>Flexible shift options</li>
+              <li>Positive, respectful environment</li>
+              <li>Recognition for your contributions</li>
+              <li>Fun, team‑oriented atmosphere</li>
+            </ul>
+          </div>
+
+          <div class="mt-10">
+            <h3 class="text-xl font-semibold">Giving Back</h3>
+            <div class="mt-4 grid md:grid-cols-2 gap-4">
+              <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h4 class="font-semibold">Tim Hortons® Camps</h4><p class="mt-2 text-slate-700">Opportunities for local youth to build confidence and discover their potential.</p></div>
+              <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h4 class="font-semibold">Smile Cookie</h4><p class="mt-2 text-slate-700">All proceeds support local charities chosen by our teams and communities.</p></div>
+              <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h4 class="font-semibold">Timbits® Sports</h4><p class="mt-2 text-slate-700">Programs that give thousands of kids the chance to play and learn teamwork.</p></div>
+              <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h4 class="font-semibold">Dave Thomas Foundation for Adoption</h4><p class="mt-2 text-slate-700">Helping find safe, loving, and permanent homes for children and youth in foster care.</p></div>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <h3 class="text-xl font-semibold">Exceptional Guest Service</h3>
+            <div class="mt-4 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h4 class="font-semibold">Super Friendly</h4><p class="mt-2 text-slate-700">We greet each guest with hand‑up service and deliver a caring, personalized experience.</p></div>
+              <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h4 class="font-semibold">Accurate</h4><p class="mt-2 text-slate-700">We make sure each order is exactly right. If we miss, we fix it fast.</p></div>
+              <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h4 class="font-semibold">Lightning Fast</h4><p class="mt-2 text-slate-700">We respect our guests’ time with quick, efficient service.</p></div>
+              <div class="rounded-2xl border border-slate-200 p-5 bg-white"><h
