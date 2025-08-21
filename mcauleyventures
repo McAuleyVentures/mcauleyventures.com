@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>McAuley Ventures | Tim Hortons Franchise Group in British Columbia</title>
+    <meta name="description" content="McAuley Ventures operates 18 Tim Hortons locations across Chilliwack, Langley, Surrey, and Kelowna. Find store numbers, addresses, phone, and directions. Join our team.">
+    <link rel="canonical" href="https://www.mcauleyventures.com/" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="McAuley Ventures" />
+    <meta property="og:description" content="Proud Tim Hortons franchise group in BC. Store finder, careers, and our values." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mcauleyventures.com/" />
+    <meta property="og:image" content="https://www.mcauleyventures.com/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='28' fill='%23b91c1c'/%3E%3Ctext x='64' y='84' text-anchor='middle' font-size='64' font-family='Arial' fill='white' font-weight='700'%3EMV%3C/text%3E%3C/svg%3E" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html:focus-within { scroll-behavior: smooth; }
+      .focus-ring:focus { outline: 2px solid #ef4444; outline-offset: 2px; }
+      @keyframes fadeInUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+      .fade-in { animation: fadeInUp 500ms ease-out 1; }
+    </style>
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","name":"McAuley Ventures","url":"https://www.mcauleyventures.com/","description":"Tim Hortons franchise group in British Columbia operating 18 locations.","areaServed":["Chilliwack","Langley","Surrey","Kelowna"],"brand":{"@type":"Brand","name":"Tim Hortons"}}
+    </script>
+  </head>
+  <body class="bg-white text-slate-800 antialiased">
+    <header class="sticky top-0 z-30 bg-white/90 backdrop-blur border-b border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="h-16 flex items-center justify-between">
+          <a href="#home" class="flex items-center gap-2 focus-ring">
+            <span class="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-red-700 text-white font-bold">MV</span>
+            <span class="font-semibold text-lg">McAuley Ventures</span>
+          </a>
+          <nav class="hidden sm:flex items-center gap-6 text-sm">
+            <a href="#stores" class="hover:text-red-700">Stores</a>
+            <a href="#about" class="hover:text-red-700">About</a>
+            <a href="#careers" class="hover:text-red-700">Careers</a>
+            <a href="#handbook" class="hover:text-red-700">Handbook</a>
+            <a href="#contact" class="hover:text-red-700">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" class="relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+          <div class="grid md:grid-cols-2 gap-10 items-center">
+            <div class="fade-in">
+              <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900">Proud Tim Hortons franchise group in BC</h1>
+              <p class="mt-4 text-lg text-slate-600">We operate 18 locations across Chilliwack, Langley, Surrey, and Kelowna. Use the store finder to get phone numbers and directions.</p>
+              <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#stores" class="rounded-2xl px-5 py-3 text-sm font-semibold bg-red-700 text-white hover:bg-red-800">Find a store</a>
+                <a href="#careers" class="rounded-2xl px-5 py-3 text-sm font-semibold border border-red-700 text-red-700 hover:bg-red-50">Work with us</a>
+              </div>
+            </div>
+            <div class="relative">
+              <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-red-50 to-red-100 border border-red-100 shadow-inner"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Store Finder -->
+      <section id="stores" class="border-t border-slate-200 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <div class="flex items-end justify-between flex-wrap">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Store finder</h2>
+              <p class="mt-1 text-slate-600">Search by store number, street, or city.</p>
+            </div>
+            <div class="text-sm"><span id="storeCount">18</span> locations</div>
+          </div>
+
+          <!-- Controls -->
+          <div class="mt-6 grid sm:grid-cols-3 gap-3">
+            <label class="col-span-2">
+              <span class="block text-sm font-medium mb-1">Search</span>
+              <input id="searchInput" type="text" placeholder="e.g., 101033 or Kelowna" class="w-full rounded-2xl border border-slate-300 px-4 py-3 focus:ring-2 focus:ring-red-400" />
+            </label>
+            <label>
+              <span class="block text-sm font-medium mb-1">City</span>
+              <select id="cityFilter" class="w-full rounded-2xl border border-slate-300 px-4 py-3 bg-white focus:ring-2 focus:ring-red-400">
+                <option value="">All cities</option>
+              </select>
+            </label>
+          </div>
+
+          <!-- Results -->
+          <div class="mt-6 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-red-50">
+                <tr>
+                  <th class="px-4 py-3 font-semibold">Store #</th>
+                  <th class="px-4 py-3 font-semibold">Address</th>
+                  <th class="px-4 py-3 font-semibold">City</th>
+                  <th class="px-4 py-3 font-semibold">Phone</th>
+                  <th class="px-4 py-3 font-semibold">Directions</th>
+                </tr>
+              </thead>
+              <tbody id="storesBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">About McAuley Ventures</h2>
+          <p class="mt-3 text-slate-600 max-w-3xl">McAuley Ventures is a Tim Hortons franchise group serving communities across British Columbia. We’re committed to great coffee, good food, and friendly service.</p>
+        </div>
+      </section>
+
+      <!-- Careers -->
+      <section id="careers" class="border-t border-slate-200 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Careers</h2>
+          <p class="mt-3 text-slate-600">We’re always looking for team members who love serving their community. Apply in minutes:</p>
+          <a href="mailto:ferian@mcauleyventures.com" class="mt-6 inline-flex rounded-2xl px-5 py-3 text-sm font-semibold bg-red-700 text-white hover:bg-red-800">Apply by email</a>
+        </div>
+      </section>
+
+      <!-- Handbook -->
+      <section id="handbook" class="border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Team Member Handbook</h2>
+          <p class="mt-3 text-slate-600">Key content from our Team Member Handbook is published below for easy reference.</p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="border-t border-slate-200 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-16">
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">Contact</h2>
+          <p class="mt-3 text-slate-600">Email our team for business inquiries, media, or operations questions.</p>
+          <a href="mailto:ferian@mcauleyventures.com" class="mt-6 inline-flex rounded-2xl px-5 py-3 text-sm font-semibold bg-red-700 text-white hover:bg-red-800">Email us</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-sm text-slate-500 flex flex-col sm:flex-row justify-between">
+        <p>&copy; <span id="year"></span> McAuley Ventures. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const stores = [
+        { number: "100935", address: "45837 Yale Rd, Chilliwack, BC V2P 2N6", city: "Chilliwack", phone: "+1-604-792-3423" },
+        { number: "101033", address: "19712 Fraser Hwy, Langley, BC V3A 4C7", city: "Langley", phone: "+1-604-533-4905" },
+        { number: "101269", address: "8045 204th St – B115, Langley, BC V2Y 2A4", city: "Langley", phone: "+1-778-705-2212" },
+        { number: "101612", address: "#200 - 20020 Willowbrook Dr, Langley, BC V2Y 2T4", city: "Langley", phone: "+1-604-530-4910" },
+        { number: "101670", address: "3491 Sexsmith Rd – Unit 1, Kelowna, BC V1X 7B5", city: "Kelowna", phone: "+1-250-765-9434" },
+        { number: "101778", address: "45571 Yale Rd, Chilliwack, BC V2P 2N1", city: "Chilliwack", phone: "+1-604-793-6856" },
+        { number: "102622", address: "43971 Industrial Way – Unit B, Chilliwack, BC V2R 4L2", city: "Chilliwack", phone: "+1-604-792-4492" },
+        { number: "102772", address: "20270 Logan Ave, Langley, BC V3A 4L6", city: "Langley", phone: "+1-604-530-4909" },
+        { number: "102888", address: "7272 200th St, Langley, BC V2Y 1S7", city: "Langley", phone: "+1-604-530-4902" },
+        { number: "103077", address: "#401 - 18682 Fraser Hwy, Surrey, BC V3S 7Y4", city: "Surrey", phone: "+1-778-571-0394" },
+        { number: "103651", address: "6036 Glover Road, Langley, BC V2Y 2P3", city: "Langley", phone: "+1-604-533-6625" },
+        { number: "104453", address: "20300 Douglas Crescent, Langley, BC V3A 5N6", city: "Langley", phone: "+1-604-534-9588" },
+        { number: "104972", address: "8236 Eagle Landing Pkwy Unit 600, Chilliwack, BC V2R 0R5", city: "Chilliwack", phone: "+1-604-792-2333" },
+        { number: "105529", address: "19971 72nd Ave, Langley, BC V2Y 3J2", city: "Langley", phone: "+1-604-534-1557" },
+        { number: "105775", address: "#130 – 19705 Fraser Hwy, Langley, BC V3A 7E9", city: "Langley", phone: "+1-604-539-0950" },
+        { number: "106270", address: "19171 Fraser Hwy, Surrey, BC V3S 7H2", city: "Surrey", phone: "+1-604-574-1812" },
+        { number: "107331", address: "1740 Pier Mac Way – Unit 200, Kelowna, BC V1V 3E7", city: "Kelowna", phone: "+1-250-807-5800" },
+        { number: "107552", address: "261 Bernard St, Kelowna, BC V1Y 6N2", city: "Kelowna", phone: "+1-778-940-9383" },
+      ];
+
+      const cityFilter = document.getElementById('cityFilter');
+      const storesBody = document.getElementById('storesBody');
+      const searchInput = document.getElementById('searchInput');
+      const storeCount = document.getElementById('storeCount');
+
+      // Populate city dropdown
+      const citySet = new Set(stores.map(s => s.city));
+      [...citySet].sort().forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c; opt.textContent = c; cityFilter.appendChild(opt);
+      });
+
+      function render() {
+        const q = searchInput.value.trim().toLowerCase();
+        const city = cityFilter.value;
+        const filtered = stores.filter(s => {
+          const matchesCity = !city || s.city === city;
+          const haystack = `${s.number} ${s.address} ${s.city} ${s.phone}`.toLowerCase();
+          const matchesQuery = !q || haystack.includes(q);
+          return matchesCity && matchesQuery;
+        });
+        storeCount.textContent = filtered.length;
+        storesBody.innerHTML = filtered.map(s => {
+          const phoneHref = `tel:${s.phone.replace(/[^\\d+]/g, '')}`;
+          const mapsHref = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.address)}`;
+          return `<tr class=\"border-t border-slate-100\"><td class=\"px-4 py-3 font-semibold\">${s.number}</td><td class=\"px-4 py-3\">${s.address}</td><td class=\"px-4 py-3\">${s.city}</td><td class=\"px-4 py-3\"><a href=\"${phoneHref}\" class=\"text-red-700 hover:underline\">${s.phone}</a
